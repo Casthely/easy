@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
 
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -26,47 +28,54 @@
 
 <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+    <header id="header" class="header">
         <nav class="nav container">
 
             <a href="#" class="nav__logo align-items-center">
-                <img src="assets/img/work/Easy_Digital-05-navbar-brand-sem-fundo.png" alt=""> Easy Digital
+                Easy Digital
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" class="nav__link active-link" data-scroll-nav="0">
                             <i class="uil uil-estate nav__icon"></i>Home
                         </a>
                     </li>
+
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" class="nav__link" data-scroll-nav="1">
                             <i class="uil uil-user nav__icon"></i>Easy
                         </a>
                     </li>
+
                     <li class="nav__item">
-                        <a href="#service" class="nav__link">
+                        <a href="#service" class="nav__link" data-scroll-nav="2">
                             <i class="uil uil-briefcase nav__icon"></i>Serviços
                         </a>
                     </li>
+
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#skills" class="nav__link" data-scroll-nav="3">
                             <i class="uil uil-file-alt nav__icon"></i>Soluções
                         </a>
                     </li>
+
                     <li class="nav__item">
-                        <a href="#suporte" class="nav__link">
+                        <a href="#suporte" class="nav__link" data-scroll-nav="4">
                             <i class="uil uil-scenery nav__icon"></i>Suporte
                         </a>
                     </li>
+
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i>Contato
+                        <a href="#contact" class="nav__link" data-scroll-nav="5">
+                            <i class="uil uil-scenery nav__icon"></i>Contato
                         </a>
                     </li>
+
                 </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
+
+                <i class="uil uil-times nav__close bx-spin" id="nav-close"></i>
 
             </div>
 
@@ -78,8 +87,8 @@
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"> </i>
-
                 </div>
+
             </div>
         </nav>
     </header>
@@ -87,19 +96,19 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home section" id="home">
+        <section id="home" class="home section" data-scroll-index="0">
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
                         <a href="http://linkedin.com/" target="_blank" class="home__social-icon">
-
                         </a>
+
                         <a href="http://dribble.com" target="_blank" class="home__social-icon">
-
                         </a>
+
                         <a href="http://github.com" target="_blank" class="home__social-icon">
-
                         </a>
+
                     </div>
 
                     <div class="home__img">
@@ -108,26 +117,32 @@
 
                     <div class="home__data">
                         <h1 class="home__title">Easy Digital!</h1>
+
                         <h3 class="home__subtitle">O Futuro da Tecnologia ao Seu Alcance!</h3>
+
                         <p class="home__description">Alto nível de experiencia e conhecimento avançado produz uma
-                            atendimento de qualidade.</p>
-                        <a href="#portfolio" class="button button-flex">
-                            Nossa Missão <i class="uil uil-message button__icon"></i>
+                            atendimento de qualidade.
+                        </p>
+
+                        <a href="#portfolio" class="button button-flex " data-scroll-nav="6">
+                            Nossa Missão
+                            <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
+
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
                         <span class="home__scroll-name">Desça</span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        <i class="uil uil-arrow-down home__scroll-arrow bx-fade-down"></i>
                     </a>
                 </div>
             </div>
         </section>
 
         <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
+        <section id="about" class="about section" data-scroll-index="1">
             <h2 class="section__title">Sobre nós</h2>
             <h2 class="section__subtitle">Vamos além de fornecer equipamentos.</h2>
 
@@ -159,15 +174,14 @@
 
                     <div class="about__buttons">
                         <a download="APRESENTAÇÃO EASY DIGITAL.ppsx" href="assets/files/APRESENTAÇÃO EASY DIGITAL.ppsx"
-                            class="button button--flex">
-                            Nossa Apresentação<i class="uil uil-download-alt button__icon"></i>
+                            class="button button--flex"><span class=" bx-flashing-hover">
+                                Nossa Apresentação<i class="uil uil-download-alt button__icon"></i></span>
                         </a>
                     </div>
+
                 </div>
             </div>
-
         </section>
-
 
         <!--==================== SERVICE ====================-->
         <section id="service" class="service section" data-scroll-index="2">
@@ -177,8 +191,6 @@
             <div class="service_container container grid">
                 <div class="service-container">
                     <div class="service-box">
-                        <!-- Image by <a href="https://www.freepik.com/free-photo/woman-work-office-using-printer_28478629.htm#fromView=search&page=1&position=26&uuid=18c87635-b722-4152-b4e7-3eed0d6c19c9">
-  freepik</a> -->
                         <img src="assets/img/woman-work-office-using-copy-freepik-1000.jpg" alt="">
 
                         <div class="service-Layer">
@@ -190,9 +202,8 @@
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </div>
                     </div>
+
                     <div class="service-box">
-                        <!-- Image by PressFoto on<a href="https://www.freepik.com/free-photo/work-secretary_5403445.htm#fromView=search&page=1&position=5&uuid=af29c672-23d9-46be-9588-4a463aac9849">
-  Freepik</a> -->
                         <img src="assets/img/work-secretary-scanner-freepik-1000.jpg" alt="">
                         <div class="service-Layer">
                             <h4>Scanners</h4>
@@ -202,10 +213,8 @@
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </div>
                     </div>
+
                     <div class="service-box">
-                        <!-- Image by <a
-      href="">
-      freepik</a> -->
                         <img src="assets/img/close-up-standing-man-using-laptop-freepik-1000.jpg" alt="">
                         <div class="service-Layer">
                             <h4>Laptops</h4>
@@ -215,9 +224,8 @@
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </div>
                     </div>
+
                     <div class="service-box">
-                        <!-- Foto de <a href="https://unsplash.com/pt-br/@iam_got?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Prasopchok</a>
-na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-mesa-QH_SAEYJW8Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
                         <img src="assets/img/prasopchok-QH_SAEYJW8Y-unsplash-640.jpg" alt="">
                         <div class="service-Layer">
                             <h4>Impressoras</h4>
@@ -227,6 +235,7 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </div>
                     </div>
+
                     <div class="service-box">
                         <img src="assets/img/Impressora Etiq. de código de barras.jpg" alt="">
                         <div class="service-Layer">
@@ -238,9 +247,9 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </div>
                     </div>
+
                     <div class="service-box">
                         <img src="assets/img/close-up-scanning-box-1000.jpg" alt="">
-                        <!-- <a href="https://www.freepik.com/free-photo/close-up-scanning-box_13450095.htm#fromView=search&page=1&position=1&uuid=adbde4d4-ad03-4011-82cc-dd5535d7a5cf">Image by freepik</a> -->
                         <div class="service-Layer">
                             <h4>Leitores</h4>
                             <P>Leitores de código de barras e QR code agilizam processos, melhoram a precisão em
@@ -250,15 +259,17 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </div>
                     </div>
-
                 </div>
 
+                <span class="link-freepik">Image by <a href="https://www.freepik.com" target="_blank">
+                        freepik</a>
+                </span>
+
             </div>
-            <span class="link-freepik">Image by <a href="https://www.freepik.com" target="_blank"> freepik</a></span>
         </section><!-- END / Service -->
 
         <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
+        <section id="skills" class="skills section" data-scroll-index="3">
             <h1 class="section__title">Soluções</h1>
             <h2 class="section__subtitle">Somos especialistas certificados!</h2>
 
@@ -287,7 +298,6 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__controle"></div>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
@@ -299,7 +309,6 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__sigame"></div>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
@@ -311,7 +320,6 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__acesso"></div>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
@@ -323,8 +331,8 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__auditoria"></div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
 
@@ -352,7 +360,6 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__pasta"></div>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
@@ -364,7 +371,6 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__mail"></div>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
@@ -376,7 +382,6 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__ocr"></div>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
@@ -388,8 +393,8 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__qualidade"></div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
 
@@ -412,58 +417,54 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Personalizado</h3>
                                     <span class="skills__number">Variedades 97%</span>
-
                                 </div>
+
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__personalizado"></div>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Direta</h3>
                                     <span class="skills__number">Papel Térmico 88%</span>
-
                                 </div>
+
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__direta"></div>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Códigos de Barra</h3>
                                     <span class="skills__number">Qualidade 100%</span>
-
                                 </div>
+
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__barra"></div>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Etiquetas</h3>
                                     <span class="skills__number">Versatilidade 96%</span>
-
                                 </div>
+
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__etiquetas"></div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section" id="suporte">
+        <section id="suporte" class="qualification section" data-scroll-index="4">
             <h1 class="section__title">Suporte</h1>
             <h2 class="section__subtitle">Drivers & Softwares!</h2>
 
@@ -493,7 +494,6 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                         href="assets/files/drivers/Canon_GPlus_PCL6_Driver_V300_32_64_00.exe">
                                         <i class="bi bi-download"></i>
                                     </a>
-
                                 </div>
                             </div>
 
@@ -529,7 +529,7 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <h3 class="qualification__title">Konica BHC554e</h3>
                                 <span class="qualification__subtitle">Windows</span>
                                 <div class="qualification__calendar">
-                                    <a download="Konica_BHC554ePCL6Winx64_5400EN"
+                                    <a download="Konica_BHC554ePCL6_Win_x64_5400EN"
                                         href="files/drivers/Konica_BHC554ePCL6Winx64_5400EN.zip">
                                         <i class="bi bi-download"></i>
                                     </a>
@@ -608,7 +608,7 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <h3 class="qualification__title">Canon Viewer</h3>
                                 <span class="qualification__subtitle">Acesso Painel</span>
                                 <div class="qualification__calendar">
-                                    <a download="Canon_remoteopview-v240.exe"
+                                    <a download="Canon_remote_op_view-v240.exe"
                                         href="files/softwares/Canon_remoteopview-v240.exe">
                                         <i class="bi bi-braces-asterisk"></i>
                                     </a>
@@ -639,15 +639,13 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </section>
 
         <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
+        <section id="portfolio" class="portfolio section" data-scroll-index="6">
 
             <h1 class="section__title">Missão</h1>
             <h2 class="section__subtitle">Compromisso inabalável com a excelência.</h2>
@@ -716,39 +714,45 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
 
-
             </div>
-
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section" id="project">
-
+        <section id="project" class="project section">
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
                         <h2 class="project__title">Você tem alguma dúvida?</h2>
-                        <p class="project__description">Entre em contato conosco e faça uma consulta.</p>
-                        <a href="#contact" class="button button--flex button--white">Mensagem
+                        <p class="project__description">Trabalhamos lado a lado com os maiores e melhores players da
+                            indústria tecnológica, garantindo que você tenha acesso às soluções mais avançadas e
+                            inovadoras disponíveis. Seja para otimizar processos, aumentar a produtividade ou
+                            proporcionar uma vantagem competitiva, nossos projetos são desenhados para atender às suas
+                            necessidades específicas, com um olhar atento às tendências e aos desafios do futuro.</p>
+                        <h2 class="project__title">Entre em contato conosco e faça uma consulta.</h2>
+                        <a href="#contact" class="button button--flex button--white">Enviar Mensagem
                             <i class="uil uil-message project__icon button__icon"></i></a>
                     </div>
 
-                    <img src="assets/img/work/easy-timbrado-color-removebg-preview.png" alt="" class="project__img">
+                    <img src="assets/img/work/easy-timbrado-color.jpg" alt="" class="project__img">
+
                 </div>
             </div>
-
         </section>
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        <section id="contact" class="contact section" data-scroll-index="5">
             <h2 class="section__title">Fale Conosco</h2>
             <h2 class="section__subtitle">Envie mensagem e a conversa será melhor</h2>
 
             <div class="contact__container container grid">
-                <div>
+                <div class="local">
+                    <!--  -->
+                    <div class="contact__information">
+                        <img src="assets/img/suporte-ao-cliente-de-ilustracao-de-design-plano-sem-fundo.png" alt="">
+                    </div>
+
                     <div class="contact__information">
                         <i class="uil uil-envelope contact__icon"></i>
-
                         <div>
                             <h3 class="contact__title">E-mail</h3>
                             <span class="contatc__subtitle">comercial@easydigital.com.br</span>
@@ -757,13 +761,13 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
 
                     <div class="contact__information">
                         <i class="uil uil-map-marker contact__icon"></i>
-
                         <div>
                             <h3 class="contact__title">Localização</h3>
                             <span class="contatc__subtitle">Belo Horizonte, MG</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="form">
                     <form action="" class="contact-form grid" id="contact-form">
                         <div class="contact__inputs grid">
@@ -779,14 +783,13 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                     name="user_email" placeholder="jsmith@empresa.com">
                             </div>
                         </div>
-                        <!-- telefone -->
+
                         <div class="contact__content form-group">
                             <label for="" class="contact__label form-label">Telefone</label>
                             <input id="user_phone" type="text" class="contact__input form-control" name="user_phone"
                                 placeholder="(99)9999-9999">
                         </div>
 
-                        <!-- Assunto -->
                         <div class="contact__content form-group">
                             <label for="" class="contact__label form-label">Assunto</label>
                             <input id="user_subject" type="text" class="contact__input form-control" name="user_subject"
@@ -805,8 +808,9 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                                 <i class="uil uil-message button__icon"></i>
                             </button>
                         </div>
-                        <p id="contact-message" class="contact-message mt-2">.</p>
+                        <p id="contact-message" class="contact-message mt-2"></p>
                     </form>
+
                 </div>
             </div>
         </section>
@@ -814,7 +818,6 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
-
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
@@ -827,30 +830,34 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
                     <li>
                         <a href="#service" class="footer__link">Serviços</a>
                     </li>
+
                     <li>
                         <a href="#portfolio" class="footer__link">Missão</a>
                     </li>
+
                     <li>
                         <a href="#suporte" class="footer__link">Suporte</a>
                     </li>
                 </ul>
 
                 <div class="footer__socials">
-                    <a href="http://facebook.com" target="_blank" class="footer__social">
-                        <i class="uil uil-facebook"></i>
+                    <a href="http://yoytube.com" target="_blank" class="footer__social">
+                        <i class="bi bi-youtube"></i>
                     </a>
+
                     <a href="http://instagram.com" target="_blank" class="footer__social">
                         <i class="uil uil-instagram"></i>
                     </a>
-                    <a href="http://twitter.com/" target="_blank" class="footer__social">
-                        <i class="uil uil-twitter-alt"></i>
+
+                    <a href="http://x.com/" target="_blank" class="footer__social">
+                        <i class="bi bi-twitter-x"></i>
                     </a>
+
                 </div>
             </div>
 
             <p class="footer__copy">Desenvolvido por &#169; Easy Digital</p>
         </div>
-
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
@@ -858,23 +865,30 @@ na <a href="https://unsplash.com/pt-br/fotografias/uma-impressora-branca-em-uma-
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
-
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
+    <!--==================== Bootstrap JS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        type="text/javascript"></script>
+
+    <!--==================== JQuery  ====================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!--==================== JS email ====================-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!--==================== Máscara de formulário ====================-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        type="text/javascript"></script>
 
-    <!--==================== JQuery  ====================-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <!--==================== ScrollIt ====================-->
     <script src="assets/js/scrollIt.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

@@ -1,3 +1,8 @@
+/*
+    Easy Digital 
+    Site v.3
+    Setembro 2024
+*/
 /*==================== MENU SHOW Y HIDDEN ====================*/
 
 const navMenu = document.getElementById('nav-menu'),
@@ -10,7 +15,7 @@ if (navToggle) {
   navToggle.addEventListener('click', () => {
     navMenu.classList.add('show-menu')
   })
-}
+};
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
@@ -18,7 +23,7 @@ if (navClose) {
   navClose.addEventListener('click', () => {
     navMenu.classList.remove('show-menu')
   })
-}
+};
 
 /*==================== REMOVE MENU MOBILE ====================*/
 
@@ -49,7 +54,7 @@ function toggleSkills() {
 
 skillsHeader.forEach((el) => {
   el.addEventListener('click', toggleSkills)
-})
+});
 
 /*==================== QUALIFICATION TABS ====================*/
 
@@ -71,7 +76,7 @@ tabs.forEach(tab => {
     })
     tab.classList.add('qualification__active')
   })
-})
+});
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 
@@ -89,6 +94,8 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     clickable: true,
   },
 
+  /* mousewheel: true,
+  keyboard: true, */
 });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -100,7 +107,7 @@ function scrollActive() {
 
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight
-    const sectionTop = current.offsetTop - 50;
+    const sectionTop = current.offsetTop - 60;
     sectionId = current.getAttribute('id')
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -118,7 +125,7 @@ function scrollHeader() {
   const nav = document.getElementById('header')
   // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
   if (this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
-}
+};
 window.addEventListener('scroll', scrollHeader)
 
 /*==================== SHOW SCROLL UP ====================*/
@@ -127,7 +134,7 @@ function scrollUp() {
   const scrollUp = document.getElementById('scroll-up');
   // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
   if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
-}
+};
 window.addEventListener('scroll', scrollUp)
 
 /*==================== DARK LIGHT THEME ====================*/
@@ -149,7 +156,7 @@ if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
-}
+};
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
@@ -159,8 +166,7 @@ themeButton.addEventListener('click', () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem('selected-theme', getCurrentTheme())
   localStorage.setItem('selected-icon', getCurrentIcon())
-})
-
+});
 
 /*======================================= Mascara de campos =======================================*/
 /*======================================= Formulários =======================================*/
@@ -222,3 +228,22 @@ emailForm.addEventListener("submit", function (event) {
 });
 
 /*======================================= End / Validar e-mail =======================================*/
+/*======================================= Scroll Reveal =======================================*/
+
+ScrollReveal({
+  distance: '80px',
+  duration: 2000,
+  delay: 300,
+});
+
+ScrollReveal().reveal('.home__data, .local, .portfolio', { origin: 'left' });
+ScrollReveal().reveal('.home__img, .form, .project', { origin: 'right' });
+ScrollReveal().reveal('.home__scroll, .section__title, .section__subtitle, .about, .service-box, .suporte, .qualification__container, .skills__content', { origin: 'top' });
+
+/*======================================= Animação - Efeito digitação =======================================*/
+/*======================================= Banner - Seja bem vindo =======================================*/
+$(function () {
+
+  $.scrollIt();
+
+});
