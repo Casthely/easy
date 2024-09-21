@@ -11,7 +11,7 @@
     /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color: hsl(var(--hue-color), 69%, 50%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -169,9 +169,9 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-    max-width: 768px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    max-width: 991.98px;
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
 }
 
 .grid {
@@ -282,7 +282,7 @@ img {
 
 /* Change background header */
 .scroll-header {
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .25);
 
 }
 
@@ -342,10 +342,11 @@ img {
     margin-bottom: var(--mb-2);
 }
 
+/*
 .home__scroll {
-    /* display: none; */
+     display: none; 
 }
-
+*/
 .home__scroll-button {
     color: var(--first-color);
     transition: 3s;
@@ -484,7 +485,7 @@ img {
 
 .service-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
@@ -588,7 +589,7 @@ img {
 
 @media (min-width: 991.98px) {
     .service-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .service-Layer h4 {
@@ -723,6 +724,54 @@ img {
 
 .skills__open .skills__arrow {
     transform: rotate(-180deg);
+}
+
+.skills__controle {
+    width: 94%;
+}
+
+.skills__sigame {
+    width: 98%;
+}
+
+.skills__acesso {
+    width: 100%;
+}
+
+.skills__auditoria {
+    width: 65%;
+}
+
+.skills__pasta {
+    width: 94%;
+}
+
+.skills__mail {
+    width: 83%;
+}
+
+.skills__ocr {
+    width: 38%;
+}
+
+.skills__qualidade {
+    width: 98%;
+}
+
+.skills__personalizado {
+    width: 97%;
+}
+
+.skills__direta {
+    width: 88%;
+}
+
+.skills__codigo {
+    width: 100%;
+}
+
+.skills__etiquetas {
+    width: 96%;
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -991,46 +1040,6 @@ img {
 .project__img {
     width: 232px;
     justify-self: center;
-}
-
-/*==================== TESTIMONIAL ====================*/
-.testimonial__data,
-.testimonial__header {
-    display: flex;
-}
-
-.testimonial__data {
-    justify-content: space-between;
-    margin-bottom: var(--mb-1);
-}
-
-.testimonial__img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: var(--mb-0-75);
-}
-
-.testimonial__name {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-}
-
-.testimonial__client {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-}
-
-.testimonial__description {
-    margin-bottom: var(--mb-2-5);
-}
-
-.testimonial__icon-star {
-    color: var(--first-color)
-}
-
-.swiper-container .swiper-pagination-testimonial {
-    bottom: 0
 }
 
 /*==================== CONTACT ME ====================*/
