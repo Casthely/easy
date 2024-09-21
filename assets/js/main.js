@@ -1,4 +1,5 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
+
 const navMenu = document.getElementById('nav-menu'),
   navToggle = document.getElementById('nav-toggle'),
   navClose = document.getElementById('nav-close')
@@ -20,6 +21,7 @@ if (navClose) {
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
+
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
@@ -30,6 +32,7 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
+
 const skillsContent = document.getElementsByClassName('skills__content'),
   skillsHeader = document.querySelectorAll('.skills__header')
 
@@ -48,9 +51,8 @@ skillsHeader.forEach((el) => {
   el.addEventListener('click', toggleSkills)
 })
 
-
-
 /*==================== QUALIFICATION TABS ====================*/
+
 const tabs = document.querySelectorAll('[data-target]'),
   tabContents = document.querySelectorAll('[data-content]')
 
@@ -71,30 +73,8 @@ tabs.forEach(tab => {
   })
 })
 
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-  modalBtns = document.querySelectorAll('.services__button'),
-  modalCloses = document.querySelectorAll('.services__modal-close')
-
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add('active-modal')
-}
-
-modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener('click', () => {
-    modal(i)
-  })
-})
-
-modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener('click', () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove('active-modal')
-    })
-  })
-})
-
 /*==================== PORTFOLIO SWIPER  ====================*/
+
 let swiperPortfolio = new Swiper('.portfolio__container', {
   cssMode: true,
   loop: true,
@@ -112,10 +92,11 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
 });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
-  const scrollY = window.pageYOffset
+  const scrollY = window.scrollY
 
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight
@@ -132,6 +113,7 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
+
 function scrollHeader() {
   const nav = document.getElementById('header')
   // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
@@ -140,6 +122,7 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 /*==================== SHOW SCROLL UP ====================*/
+
 function scrollUp() {
   const scrollUp = document.getElementById('scroll-up');
   // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
