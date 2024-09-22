@@ -3,6 +3,7 @@
     Site v.3
     Setembro 2024
 */
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 
 const navMenu = document.getElementById('nav-menu'),
