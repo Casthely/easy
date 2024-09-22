@@ -242,6 +242,7 @@ ScrollReveal().reveal('.home__scroll, .section__title, .section__subtitle, .abou
 
 /*======================================= Animação - Efeito digitação =======================================*/
 /*======================================= Banner - Seja bem vindo =======================================*/
+
 $(function () {
 
   $.scrollIt();
