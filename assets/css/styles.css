@@ -148,10 +148,8 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-    min-width: 100%;
     padding: 2rem 0 4rem;
 }
-
 
 .section__title {
     font-size: var(--h1-font-size);
@@ -171,8 +169,8 @@ img {
 /*==================== LAYOUT ====================*/
 .container {
     max-width: 991.98px;
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
 }
 
 .grid {
@@ -187,7 +185,6 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
-
 }
 
 /*==================== NAV ====================*/
@@ -198,7 +195,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .nav__logo,
@@ -269,7 +265,6 @@ img {
     }
 }
 
-
 /* show menu */
 .show-menu {
     bottom: 0
@@ -283,7 +278,6 @@ img {
 /* Change background header */
 .scroll-header {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .25);
-
 }
 
 /*==================== HOME ====================*/
@@ -296,8 +290,6 @@ img {
     padding-top: 3.5rem;
     align-items: center;
 }
-
-
 
 .home__social {
     display: grid;
@@ -338,11 +330,11 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-/*
+
 .home__scroll {
-     display: none; 
+    /* display: none;  */
 }
-*/
+
 .home__scroll-button {
     color: var(--first-color);
     transition: 3s;
@@ -354,7 +346,6 @@ img {
 
 .home__scroll-mouse {
     font-size: 2rem;
-
 }
 
 .home__scroll-name {
@@ -362,12 +353,10 @@ img {
     color: var(--title-color);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
-
 }
 
 .home__scroll-arrow {
     font-size: 1.25rem;
-
 }
 
 /*==================== BUTTONS ====================*/
@@ -405,7 +394,6 @@ img {
     display: inline-flex;
     align-items: center;
     transition: .3s;
-
 }
 
 .button--small {
@@ -429,13 +417,11 @@ img {
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
-
 }
 
 .about__description {
     text-align: center;
     margin-bottom: var(--mb-2-5);
-
 }
 
 .about__info {
@@ -452,14 +438,12 @@ img {
 
 .about__info-name {
     font-size: var(--smaller-font-size);
-
 }
 
 .about__info-title,
 .about__info-name {
     display: block;
     text-align: center;
-
 }
 
 .about__buttons {
@@ -496,7 +480,6 @@ img {
 .service-box img {
     width: 100%;
     transition: .5s ease;
-
 }
 
 .service-box:hover img {
@@ -627,6 +610,7 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+
 .skills__container {
     row-gap: 0;
 }
@@ -642,12 +626,10 @@ img {
 .skills__arrow {
     font-size: 2rem;
     color: var(--first-color);
-
 }
 
 .skills__icon {
     margin-right: var(--mb-0-75);
-
 }
 
 .skills__title {
@@ -657,13 +639,11 @@ img {
 .skills__subtitle {
     font-size: var(--small-font-size);
     color: var(--text-color-light);
-
 }
 
 .skills__arrow {
     margin-left: auto;
     transition: .4s;
-
 }
 
 .skills__list {
@@ -686,12 +666,10 @@ img {
 .skills__percentage {
     height: 5px;
     border-radius: .25rem;
-
 }
 
 .skills__bar {
     background-color: var(--first-color-lighter);
-
 }
 
 .skills__percentage {
@@ -704,16 +682,13 @@ img {
 }
 
 .skills__close .skills__list {
-
     height: 0;
     overflow: hidden;
-
 }
 
 .skills__open .skills__list {
     height: max-content;
     margin-bottom: var(--mb-2-5);
-
 }
 
 .skills__open .skills__arrow {
@@ -778,11 +753,11 @@ img {
 .qualification__button {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    cursor: pointer
-}
+    cursor: pointer;
 
-.qualification__button:hover {
-    color: var(--first-color);
+    &:hover {
+        color: var(--first-color);
+    }
 }
 
 .qualification__icon {
@@ -811,7 +786,6 @@ img {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     /* margin-bottom: var(--mb-1) */
-
 }
 
 .qualification__rounder {
@@ -832,7 +806,6 @@ img {
 
 .qualification__content[data-content] {
     display: none;
-
 }
 
 .qualification__active[data-content] {
@@ -842,8 +815,6 @@ img {
 .qualification__button.qualification__active {
     color: var(--first-color)
 }
-
-
 
 /*==================== SERVICES ====================*/
 .services__container {
@@ -858,10 +829,10 @@ img {
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
     transition: .3s;
-}
 
-.services__content:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .30)
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .30)
+    }
 }
 
 .services__icon {
@@ -936,7 +907,6 @@ img {
 .services__modal-icon {
     color: var(--first-color);
     margin-right: var(--mb-0-25);
-
 }
 
 /* Active Modal */
@@ -997,7 +967,6 @@ img {
 
 .swiper-pagination-bullet-active {
     background-color: var(--first-color);
-
 }
 
 .swiper-button-prev,
@@ -1039,7 +1008,6 @@ img {
     width: 232px;
     justify-self: center;
 }
-
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
@@ -1097,6 +1065,7 @@ img {
 }
 
 /*==================== FOOTER ====================*/
+
 .footer {
     padding-top: 2rem;
 }
@@ -1113,7 +1082,6 @@ img {
 .footer__title {
     font-size: var(--h1-font-size);
     margin-bottom: var(--mb-0-25);
-
 }
 
 .footer__subtitle {
@@ -1124,19 +1092,19 @@ img {
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
-}
 
-.footer__link:hover {
-    color: var(--first-color-lighter);
+    &:hover {
+        color: var(--first-color-lighter);
+    }
 }
 
 .footer__social {
     font-size: 1.25rem;
     margin-right: var(--mb-1-5);
-}
 
-.footer__social:hover {
-    color: var(--first-color-lighter);
+    &:hover {
+        color: var(--first-color-lighter);
+    }
 }
 
 .footer__copy {
@@ -1154,6 +1122,7 @@ img {
 }
 
 /*========== SCROLL UP ==========*/
+
 .scrollup {
     position: fixed;
     right: 1rem;
@@ -1163,10 +1132,10 @@ img {
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
-}
 
-.scrollup:hover {
-    background-color: var(--first-color-alt);
+    &:hover {
+        background-color: var(--first-color-alt);
+    }
 }
 
 .scrollup__icon {
@@ -1180,6 +1149,7 @@ img {
 }
 
 /*========== SCROLL BAR ==========*/
+
 ::-webkit-scrollbar {
     width: .60rem;
     background-color: var(--scroll-bar-color);
@@ -1196,6 +1166,7 @@ img {
 }
 
 /*==================== MEDIA QUERIES ====================*/
+
 /* For small devices */
 @media screen and (max-width: 350px) {
     .container {
