@@ -1106,7 +1106,7 @@ img {
 }
 
 .footer__bg {
-    background-color: var(--first-color-second);
+    background-color: var(--first-color);
     padding: 2rem 0 3rem;
 }
 
@@ -1436,7 +1436,7 @@ img {
         }
 
         .project__container {
-            background-color: var(--first-color-second);
+            background-color: var(--first-color);
             border-radius: 1rem;
             padding: 3rem 2.5rem 0;
             grid-template-columns: 1fr max-content;
