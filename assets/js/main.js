@@ -205,7 +205,7 @@ emailForm.addEventListener("submit", function (event) {
 
     //mostrar mensagem para usuário
     contactMessage.textContent = 'Mensagem enviada com sucesso ✅'
-    contactMessage.style.color = "#24b600";
+    contactMessage.style.color = "#006400";
 
     //remover mensagem após 5 segundos
     setTimeout(() => {
@@ -218,7 +218,7 @@ emailForm.addEventListener("submit", function (event) {
   } else {
 
     contactMessage.textContent = 'Mensagem não foi enviada ❌'
-    contactMessage.style.color = "#ac0000";
+    contactMessage.style.color = "#cd5c5c";
 
     setTimeout(() => {
 
