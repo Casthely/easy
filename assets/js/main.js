@@ -217,7 +217,7 @@ emailForm.addEventListener("submit", function (event) {
 
   } else {
 
-    contactMessage.textContent = 'Mensagem não foi enviada ❌';
+    contactMessage.textContent = 'Formato de e-mail invalido ❌';
     contactMessage.style.color = "#cd5c5c";
 
     setTimeout(() => {
@@ -236,9 +236,9 @@ ScrollReveal({
   delay: 300,
 });
 
-ScrollReveal().reveal('.home__data, .local, .portfolio', { origin: 'left' });
-ScrollReveal().reveal('.home__img, .form, .project', { origin: 'right' });
-ScrollReveal().reveal('.home__scroll, .section__title, .section__subtitle, .about, .service-box, .suporte, .qualification__container, .skills__content', { origin: 'top' });
+ScrollReveal().reveal('.home__data', { origin: 'left' });
+ScrollReveal().reveal('.home__img', { origin: 'right' });
+ScrollReveal().reveal('.home__scroll, .section__title, .section__subtitle, .about, .service-box, .suporte, .qualification__container, .skills__content, .form, .project, .local, .portfolio, .footer', { origin: 'top' });
 
 /*======================================= Animação - Efeito digitação =======================================*/
 /*======================================= Banner - Seja bem vindo =======================================*/
