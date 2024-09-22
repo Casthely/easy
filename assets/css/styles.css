@@ -148,9 +148,10 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
+    min-width: 100%;
     padding: 2rem 0 4rem;
-
 }
+
 
 .section__title {
     font-size: var(--h1-font-size);
@@ -1016,7 +1017,7 @@ img {
 
 .project__bg {
     background-color: var(--first-color-second);
-    padding-top: 3rem;
+    padding: 3rem 0;
 }
 
 .project__title {
@@ -1090,8 +1091,8 @@ img {
 }
 
 #contact-message {
-    font-size: .85rem;
-    height: 1rem;
+    font-size: .76rem;
+    height: .8rem;
     width: 235px;
 }
 
@@ -1284,6 +1285,8 @@ img {
     .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
     }
 
     .qualification__sections {
@@ -1467,6 +1470,17 @@ img {
 
     }
 }
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .project__description {
+        display: none;
+    }
+
+    .project__title {
+        margin-bottom: var(--mb-2);
+    }
+}
+
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
