@@ -108,7 +108,7 @@ function scrollActive() {
 
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 60;
+    const sectionTop = current.offsetTop - 50;
     sectionId = current.getAttribute('id');
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -232,9 +232,9 @@ emailForm.addEventListener("submit", function (event) {
 /*======================================= Scroll Reveal =======================================*/
 
 ScrollReveal({
-  distance: '80px',
+  distance: '60px',
   duration: 2000,
-  delay: 300,
+  delay: 200,
 });
 
 ScrollReveal().reveal('.home__data', { origin: 'left' });

@@ -331,11 +331,6 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-
-.home__scroll {
-    /* display: none;  */
-}
-
 .home__scroll-button {
     color: var(--first-color);
     transition: 3s;
@@ -927,6 +922,7 @@ img {
 
 .portfolio__img {
     width: 265px;
+    height: 149px;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -1392,6 +1388,7 @@ img {
 
         .portfolio__img {
             width: 320px;
+            height: 180px;
         }
 
         .portfolio__content {
