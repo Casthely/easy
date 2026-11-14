@@ -7,6 +7,7 @@
 - [Serviços](https://easydigital.com.br/#service): outsourcing de equipamentos
 - [Soluções](https://easydigital.com.br/#skills): impressão e cópia (PaperCut / NDD), scanner e térmicas
 - [Downloads](https://easydigital.com.br/download.html): drivers e softwares de suporte
+- [Política de Privacidade](https://easydigital.com.br/privacidade.html): como os dados enviados pelo formulário são tratados
 
 ## Contato
 - E-mail: comercial@easydigital.com.br

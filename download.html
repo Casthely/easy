@@ -1,63 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Easy Digital — Download!</title>
+<html lang="pt-BR">
 
-  <!-- Icons (mesmo padrão do site) -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download de drivers e softwares | Easy Digital</title>
+  <meta name="description" content="Baixe drivers de impressoras (Canon, Epson, Kyocera), softwares de acesso remoto e firmwares de suporte da Easy Digital.">
+  <link rel="canonical" href="https://easydigital.com.br/download.html">
+
+  <!-- Ícones (mesmos da página inicial) -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
 
-  <!-- Swiper (mantido caso queira slider em alguma seção futura) -->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-  <!-- CSS do site já existente -->
+  <!-- CSS do site -->
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="shortcut icon" href="assets/img/work/Easy-Digital-05-favicon-sem-fundo.png" />
 
   <style>
-    /* Ajustes visuais do novo miolo mantendo o tema */
-    .empty__state {text-align:center; padding:2.5rem 1rem; opacity:.85}
+    .dl-wrap { max-width: 760px; margin: 0 auto; }
 
-    /* Chips de marcas */
-    #brandChips .chip {border:1px solid var(--text-color-light); border-radius:999px; padding:.45rem .85rem; font-size:.85rem; cursor:pointer; white-space:nowrap}
-    #brandChips .chip.active {background: var(--first-color); color:#fff; border-color:transparent}
+    .dl-group { margin-bottom: 2.5rem; }
 
-    /* Linhas de item */
-    .row__item {display:grid; grid-template-columns: 1.2fr .9fr .9fr .6fr .6fr auto; gap:.75rem; align-items:center; background: var(--container-color); padding:1rem; border-radius:1rem; box-shadow: var(--box-shadow, 0 4px 16px rgba(0,0,0,.06));}
-    .row__name {display:flex; gap:.65rem; align-items:center}
-    .row__name i {font-size:1.25rem}
-    .row__badges {display:flex; gap:.35rem; flex-wrap:wrap}
-    .badge {display:inline-flex; align-items:center; gap:.35rem; padding:.2rem .5rem; border:1px solid var(--text-color-light); border-radius:999px; font-size:.75rem}
-
-    @media (max-width: 992px){
-      .row__item {grid-template-columns: 1.6fr 1fr .8fr auto;}
-      .col-hide-lg {display:none}
+    .dl-group__title {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: var(--h3-font-size);
+      margin-bottom: var(--mb-1);
     }
-    @media (max-width: 576px){
-      .row__item {grid-template-columns: 1fr auto; row-gap:.35rem}
-      .col-hide-sm {display:none}
+
+    .dl-group__title i { color: var(--first-color); font-size: 1.4rem; }
+
+    .dl-list { display: grid; gap: .75rem; }
+
+    .dl-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: .75rem 1rem;
+      background-color: var(--container-color);
+      padding: 1rem 1.25rem;
+      border-radius: .5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    }
+
+    .dl-item__info { flex: 1 1 14rem; }
+
+    .dl-item__name {
+      font-size: var(--normal-font-size);
+      font-weight: var(--font-medium);
+    }
+
+    .dl-item__desc {
+      display: block;
+      font-size: var(--small-font-size);
+      color: var(--text-color-light);
+    }
+
+    .dl-help {
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    .dl-help p { margin-bottom: var(--mb-1-5); }
+
+    .dl-item .button:focus-visible,
+    .dl-help .button:focus-visible {
+      outline: 2px solid var(--title-color);
+      outline-offset: 2px;
     }
   </style>
 </head>
+
 <body>
-  <!--==================== HEADER (mesmo padrão) ====================-->
+  <!--==================== HEADER ====================-->
   <header id="header" class="header">
     <nav class="nav container">
       <a href="/" class="nav__logo align-items-center">Easy Digital</a>
+
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
           <li class="nav__item"><a href="/" class="nav__link"><i class="uil uil-estate nav__icon"></i>Home</a></li>
-          <li class="nav__item"><a href="/index.html#about" class="nav__link"><i class="uil uil-user nav__icon"></i>Easy</a></li>
-          <li class="nav__item"><a href="/index.html#service" class="nav__link"><i class="uil uil-briefcase nav__icon"></i>Serviços</a></li>
-          <li class="nav__item"><a href="/index.html#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Soluções</a></li>
+          <li class="nav__item"><a href="/#about" class="nav__link"><i class="uil uil-user nav__icon"></i>Easy</a></li>
+          <li class="nav__item"><a href="/#service" class="nav__link"><i class="uil uil-briefcase nav__icon"></i>Serviços</a></li>
+          <li class="nav__item"><a href="/#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Soluções</a></li>
           <li class="nav__item"><a href="/download.html" class="nav__link active-link"><i class="bx bxs-download nav__icon"></i>Download</a></li>
-          <li class="nav__item"><a href="/index.html#contact" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Contato</a></li>
+          <li class="nav__item"><a href="/#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contato</a></li>
         </ul>
-        <i class="uil uil-times nav__close bx-spin" id="nav-close"></i>
+
+        <i class="uil uil-times nav__close" id="nav-close"></i>
       </div>
+
       <div class="nav__btns">
         <i class="uil uil-moon change-theme" id="theme-button"></i>
         <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
@@ -65,355 +100,307 @@
     </nav>
   </header>
 
+  <!--==================== MAIN ====================-->
   <main class="main">
-    <!--==================== HERO ====================-->
-    <section class="section" id="downloads-hero">
-      <div class="container grid">
-        <div>
-          <h1 class="section__title">Download</h1>
-          <h2 class="section__subtitle">Drivers, softwares e firmwares — tudo em um só lugar, com busca rápida.</h2>
-        </div>
-      </div>
-    </section>
+    <section class="section">
+      <h1 class="section__title">Download</h1>
+      <p class="section__subtitle">Drivers, softwares e firmwares de suporte.</p>
 
-    <!--==================== BUSCA RÁPIDA ====================-->
-    <section class="section" id="quick-search">
-      <div class="container" style="max-width:980px">
-        <div class="contact__form" style="display:flex; gap:.75rem; align-items:center">
-          <i class="bi bi-search" style="font-size:1.4rem; opacity:.7"></i>
-          <input id="qInput" class="contact__input" type="search" placeholder="Ex.: Kyocera KX 8.5, Epson WF‑6590, AnyDesk, TeamViewer..." style="flex:1" />
-          <button id="clearBtn" class="button button--flex" type="button" title="Limpar busca">
-            Limpar <i class="uil uil-times button__icon" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== SELEÇÃO DE FABRICANTE (CHIPS) ====================-->
-    <section class="section" id="brand-chips">
       <div class="container">
-        <div style="display:flex; gap:.5rem; overflow:auto; padding-bottom:.25rem" id="brandChips"></div>
-      </div>
-    </section>
+        <div class="dl-wrap">
 
-    <!--==================== TABS (TIPO) ====================-->
-    <section class="section" id="type-tabs">
-      <div class="container">
-        <div class="skills__tabs" style="display:flex; gap:.5rem; flex-wrap:wrap">
-          <button class="button button--ghost" data-tab="All"><i class="bx bx-layer"></i>&nbsp;Todos</button>
-          <button class="button button--ghost" data-tab="Driver"><i class="bx bxs-chip"></i>&nbsp;Drivers</button>
-          <button class="button button--ghost" data-tab="Software"><i class="uil uil-apps"></i>&nbsp;Softwares</button>
-          <button class="button button--ghost" data-tab="Firmware"><i class="bx bxs-microchip"></i>&nbsp;Firmwares</button>
-        </div>
-      </div>
-    </section>
+          <!--==================== DRIVERS ====================-->
+          <div class="dl-group">
+            <h2 class="dl-group__title"><i class="bx bxs-chip"></i>Drivers</h2>
+            <div class="dl-list">
 
-    <!--==================== LISTA (LAYOUT EM LINHAS) ====================-->
-    <section class="section" id="list-view">
-      <div class="container">
-        <div class="portfolio__content grid" style="row-gap:1rem" id="rowsContainer"></div>
-        <div class="empty__state" id="emptyState" style="display:none; text-align:center; padding:2rem 1rem; opacity:.8">
-          <i class="bi bi-search" style="font-size:2.2rem"></i>
-          <p style="margin-top:.5rem">Nada encontrado com os filtros atuais. Tente outro termo ou limpe a busca.</p>
-        </div>
-      </div>
-    </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-        <section id="project" class="project section">
-            <div class="project__bg">
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <h2 class="project__title">Você tem alguma dúvida?</h2>
-                        <p class="project__description">Estamos prontos para ajudar com soluções inovadoras e
-                            personalizadas para o seu negócio. Otimize processos, aumente a produtividade e obtenha uma
-                            vantagem competitiva com a EasyDigital.</h2>
-                            <h2 class="project__title">Entre em contato conosco e faça uma consulta!</h2>
-                            <a href="https://wa.me/5531971248902" target="_blank" rel="noopener" class="button button--flex button--white">Conversar via WhatsApp
-                                <i class="uil uil-message project__icon button__icon"></i></a>
-                    </div>
-
-                    <img src="assets/img/work/easy-timbrado-color.jpg" alt="" class="project__img">
-
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Canon PCL6 V3.50</h3>
+                  <span class="dl-item__desc">Driver de impressão para Windows (32 e 64 bits)</span>
                 </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/GPlus_PCL6_Driver_V350_32_64_00.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Canon PCL6 V3.31</h3>
+                  <span class="dl-item__desc">Driver de impressão para Windows (32 e 64 bits)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/GPlus_PCL6_Driver_V331_32_64_00.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Canon PCL6 V3.00</h3>
+                  <span class="dl-item__desc">Driver de impressão para Windows (32 e 64 bits)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/Canon_GPlus_PCL6_Driver_V300_32_64_00.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Epson WF-6590</h3>
+                  <span class="dl-item__desc">Driver de impressão para Windows (64 bits)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/Epson_WF6590_STD_X64_24703_AM.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">GX-7010 1.04</h3>
+                  <span class="dl-item__desc">Driver para Windows</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/win-gx7000-1_04.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">GX-7010 1.03</h3>
+                  <span class="dl-item__desc">Driver para Windows</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/win-gx7000-1_03.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Kyocera KX Driver 8.7.0917</h3>
+                  <span class="dl-item__desc">Driver de impressão para Windows (arquivo ZIP)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/KX%20Driver%208.7.0917.zip" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Kyocera KX Driver 8.5.2405</h3>
+                  <span class="dl-item__desc">Driver de impressão para Windows (arquivo ZIP)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/KX_DRIVER_8.5.2405.zip" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Kyocera KX841716</h3>
+                  <span class="dl-item__desc">Driver de impressão para Windows (arquivo ZIP)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/Kyocera_KX841716.zip" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Konica Minolta BHC458i</h3>
+                  <span class="dl-item__desc">Driver PCL6 para Windows (64 bits, arquivo ZIP)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/Konica_BHC458IT5PCL6Winx64_11200EN.zip" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Konica Minolta BHC554e</h3>
+                  <span class="dl-item__desc">Driver PCL6 para Windows (64 bits, arquivo ZIP)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/drivers/Konica_BHC554ePCL6Winx64_5400EN.zip" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
             </div>
-        </section>
-    <!--==================== CONTACT ME ====================-->
-        <section id="contact" class="contact section" data-scroll-index="5">
-            <h2 class="section__title">Fale Conosco</h2>
-            <h2 class="section__subtitle">Nos envie uma mensagem e a conversa será melhor!</h2>
+          </div>
 
-            <div class="contact__container container grid">
-                <div class="local">
-                    <!--  -->
-                    <div class="contact__information">
-                        <img src="assets/img/suporte-ao-cliente-de-ilustracao-de-design-plano-sem-fundo.png" alt="">
-                    </div>
+          <!--==================== SOFTWARES ====================-->
+          <div class="dl-group">
+            <h2 class="dl-group__title"><i class="uil uil-apps"></i>Softwares</h2>
+            <div class="dl-list">
 
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-                        <div>
-                            <a href="mailto:comercial@easydigital.com.br?subject=Enviado do site">
-                                <h3 class="contact__title">E-mail</h3>
-                                <span class="contatc__subtitle">comercial@easydigital.com.br</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-                        <div>
-                            <a href="https://maps.app.goo.gl/UKcr6xu4yXujBusGA" target="_blank" rel="noopener">
-                                <h3 class="contact__title">Localização</h3>
-                                <span class="contatc__subtitle">Av. Olinto Magalhães, 1869 - Dom Bosco <br>Belo Horizonte -
-                                    MG</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class='bx bxl-whatsapp contact__icon'></i>
-                        <div>
-                            <a href="https://wa.me/5531971248902" target="_blank" rel="noopener">
-                                <h3 class="contact__title">WhatsApp</h3>
-                                <span class="contatc__subtitle">+ 55 (31) 97124-8902</span>
-                            </a>
-                        </div>
-                    </div>
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">AnyDesk v9.8.3</h3>
+                  <span class="dl-item__desc">Acesso remoto</span>
                 </div>
+                <a class="button button--flex button--small" href="assets/files/softwares/AnyDesk%20v9.8.3.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
 
-                <div class="form">
-                    <form action="" class="contact-form grid" id="contact-form">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content form-group">
-                                <label for="user_name" class="contact__label form-label">Nome</label>
-                                <input id="user_name" type="text" class="contact__input form-control" name="user_name"
-                                    placeholder="John Smith" required>
-                            </div>
-
-                            <div class="contact__content form-group">
-                                <label for="user_email" class="contact__label form-label">E-mail</label>
-                                <input id="user_email" type="email" class="contact__input form-control"
-                                    name="user_email" placeholder="jsmith@empresa.com" required>
-                            </div>
-                        </div>
-
-                        <div class="contact__content form-group">
-                            <label for="user_phone" class="contact__label form-label">Telefone</label>
-                            <input id="user_phone" type="text" class="contact__input form-control" name="user_phone"
-                                placeholder="(99)9999-9999" required>
-                        </div>
-
-                        <div class="contact__content form-group">
-                            <label for="user_subject" class="contact__label form-label">Assunto</label>
-                            <input id="user_subject" type="text" class="contact__input form-control" name="user_subject"
-                                placeholder="Multifuncionais" required>
-                        </div>
-
-                        <div class="contact__content form-group">
-                            <label for="user_message" class="contact__label form-label">Mensagem</label>
-                            <textarea id="user_message" cols="0" rows="7" class="contact__input form-control"
-                                name="user_message" placeholder="Escreva aqui sua mensagem!" required></textarea>
-                        </div>
-
-                        <div>
-                            <button class="button button--flex" type="submit">
-                                Enviar Mensagem
-                                <i class="uil uil-message button__icon"></i>
-                            </button>
-                        </div>
-                        <p id="contact-message" class="contact-message"></p>
-                    </form>
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">TeamViewer</h3>
+                  <span class="dl-item__desc">Acesso remoto</span>
                 </div>
+                <a class="button button--flex button--small" href="assets/files/softwares/TeamViewer_Setup_x64.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Canon Viewer v2.4</h3>
+                  <span class="dl-item__desc">Acesso ao painel da impressora</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/softwares/Canon_remoteopview-v240.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">PrintWayy v9.27</h3>
+                  <span class="dl-item__desc">Monitoramento de dispositivos</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/softwares/PrintWayy_9_27.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Rufus 4.15</h3>
+                  <span class="dl-item__desc">Criação de pen drive inicializável (versão portátil)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/softwares/rufus-4.15p.exe" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
             </div>
-        </section>
+          </div>
+
+          <!--==================== FIRMWARES ====================-->
+          <div class="dl-group">
+            <h2 class="dl-group__title"><i class="bx bxs-microchip"></i>Firmwares</h2>
+            <div class="dl-list">
+
+              <div class="dl-item">
+                <div class="dl-item__info">
+                  <h3 class="dl-item__name">Kyocera TASKalfa 6003i / 5003i / 4003i</h3>
+                  <span class="dl-item__desc">Firmware V2.20 (arquivo ZIP, 325 MB)</span>
+                </div>
+                <a class="button button--flex button--small" href="assets/files/firmwares/6003i5003i4003i%20Firmware%20v.2.20.zip" download>
+                  Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!--==================== AJUDA ====================-->
+          <div class="dl-help">
+            <p>Não achou o que procura ou precisa de ajuda com a instalação?</p>
+            <a href="https://wa.me/5531971248902" target="_blank" rel="noopener" class="button button--flex">
+              Falar pelo WhatsApp <i class="bx bxl-whatsapp button__icon"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!--==================== FOOTER (mesmo padrão) ====================-->
+  <!--==================== FOOTER ====================-->
   <footer class="footer">
     <div class="footer__bg">
       <div class="footer__container container grid">
         <div>
-          <img src="assets/img/work/Easy_Digital-05-navbar-brand-sem-fundo.png" alt="">
-          <h1 class="footer__title">Easy Digital</h1>
+          <img src="assets/img/work/Easy_Digital-05-navbar-brand-sem-fundo.png" alt="Easy Digital">
+          <h3 class="footer__title">Easy Digital</h3>
           <span class="footer__subtitle">Especialistas em Soluções tecnológicas para gestão de impressão e automação de processos empresariais.</span>
         </div>
+
         <ul class="footer__links">
-          <li><a href="/index.html#service" class="footer__link">Serviços</a></li>
-          <li><a href="/index.html#portfolio" class="footer__link">Missão</a></li>
-          <li><a href="/index.html#suporte" class="footer__link">Suporte</a></li>
-          <li><a href="https://app.printwayy.com/" target="_blank" class="footer__link">Portal</a></li>
+          <li><a href="/#service" class="footer__link">Serviços</a></li>
+          <li><a href="/#portfolio" class="footer__link">Missão</a></li>
+          <li><a href="/#suporte" class="footer__link">Suporte</a></li>
+          <li><a href="https://app.printwayy.com/" target="_blank" rel="noopener" class="footer__link">Portal</a></li>
         </ul>
+
         <div class="footer__socials">
-          <a href="https://wa.me/5531971248902" target="_blank" rel="noopener" class="footer__social"><i class="bx bxl-whatsapp"></i></a>
-          <a href="https://www.youtube.com/@EasyDigitaltda" target="_blank" rel="noopener" class="footer__social"><i class="bi bi-youtube"></i></a>
-          <a href="https://www.instagram.com/easydigitalltda/" target="_blank" rel="noopener" class="footer__social"><i class="uil uil-instagram"></i></a>
-          <a href="https://x.com/easydigitalltda" target="_blank" rel="noopener" class="footer__social"><i class="bi bi-twitter-x"></i></a>
-          <a href="download.html#downloads-hero" class="footer__social"><i class="bi bi-cloud-arrow-down"></i></a>
+          <a href="https://wa.me/5531971248902" target="_blank" rel="noopener" class="footer__social" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://www.youtube.com/@EasyDigitaltda" target="_blank" rel="noopener" class="footer__social" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/easydigitalltda/" target="_blank" rel="noopener" class="footer__social" aria-label="Instagram"><i class="uil uil-instagram"></i></a>
+          <a href="https://x.com/easydigitalltda" target="_blank" rel="noopener" class="footer__social" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          <a href="/download.html" class="footer__social" aria-label="Downloads"><i class="bi bi-cloud-arrow-down"></i></a>
         </div>
       </div>
-      <p class="footer__copy">Desenvolvido por &#169; Easy Digital<br>Todos os direitos reservados.</p>
+
+      <p class="footer__copy">
+        <a href="./index.html/#about" style="color:#fff;">Sobre</a> &nbsp;|&nbsp;
+        <a href="./index.html/#contact" style="color:#fff;">Contato</a> &nbsp;|&nbsp;
+        <a href="privacidade.html" style="color:#fff;">Política de Privacidade</a>
+        <br><br>
+        Desenvolvido por &#169; Easy Digital
+        <br>
+        Todos os direitos reservados.
+      </p>
     </div>
   </footer>
 
-  <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
+  <a href="#" class="scrollup" id="scroll-up" aria-label="Voltar ao topo">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
 
-  <!--==================== SCRIPTS ====================-->
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="assets/js/scrollIt.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="assets/js/scrollIt.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <!--==================== SCRIPT (menu, tema e rolagem) ====================-->
   <script>
-    // ====== Catálogo (pode migrar para assets/data/downloads.json) ======
-    const CATALOG = [
-      // Drivers
-      { id:"canon-pcl6-v331", type:"Driver", vendor:"Canon", name:"Canon PCL6", version:"3.31", os:["Windows"], arch:["x64","x86"], size:"41 MB", date:"2024-05-20", path:"assets/files/drivers/GPlus_PCL6_Driver_V331_32_64_00.exe" },
-      { id:"epson-wf6590-std", type:"Driver", vendor:"Epson", name:"Epson WF‑6590", version:"Std 24.7.03", os:["Windows"], arch:["x64"], size:"49 MB", date:"2023-11-03", path:"assets/files/drivers/Epson_WF6590_STD_X64_24703_AM.exe" },
-      { id:"gx-7010-103", type:"Driver", vendor:"Canon", name:"GX‑7010", version:"1.03", os:["Windows"], arch:["x64","x86"], size:"12 MB", date:"2022-08-15", path:"assets/files/drivers/win-gx7000-1_03.exe" },
-      { id:"kyocera-kx-852405", type:"Driver", vendor:"Kyocera", name:"Kyocera KX", version:"8.5.2405", os:["Windows"], arch:["x64"], size:"53 MB", date:"2024-06-10", path:"assets/files/drivers/KX_DRIVER_8.5.2405.zip" },
-      // Softwares
-      { id:"anydesk", type:"Software", vendor:"AnyDesk", name:"AnyDesk", version:"latest", os:["Windows","macOS","Linux"], arch:["x64"], size:"—", date:"—", path:"assets/files/softwares/AnyDesk.exe" },
-      { id:"teamviewer", type:"Software", vendor:"TeamViewer", name:"TeamViewer", version:"latest", os:["Windows"], arch:["x64"], size:"—", date:"—", path:"assets/files/softwares/TeamViewer_Setup_x64.exe" },
-      { id:"canon-remote-op-view", type:"Software", vendor:"Canon", name:"Canon Remote Operation Viewer", version:"2.4.0", os:["Windows"], arch:["x64"], size:"24 MB", date:"2021-03-28", path:"assets/files/softwares/Canon_remoteopview-v240.exe" },
-      // (Exemplo de firmware — se não usar agora, pode remover)
-      { id:"kyocera", type:"Firmware", vendor:"Kyocera", name:"TASKalfa 6003i-5003i-4003i ", version:"V2.20", os:[""], arch:[""], size:"325 MB", path:"assets/files/firmwares/6003i5003i4003i Firmware v.2.20.zip" },
-    ];
+    (function () {
+      var menu = document.getElementById('nav-menu');
+      var toggle = document.getElementById('nav-toggle');
+      var close = document.getElementById('nav-close');
+      var header = document.getElementById('header');
+      var up = document.getElementById('scroll-up');
+      var themeButton = document.getElementById('theme-button');
+      var darkTheme = 'dark-theme';
+      var iconTheme = 'uil-sun';
 
-    // ====== Helpers ======
-    const $ = (sel, root=document) => root.querySelector(sel);
-    const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
-    const uniq = arr => Array.from(new Set(arr));
-
-    function fmtDate(d){ if(!d || d==='—') return '—'; try { return new Date(d).toLocaleDateString('pt-BR'); } catch { return d; } }
-
-    function badge(icon, text){
-      const span=document.createElement('span');
-      span.className='badge';
-      span.innerHTML=`<i class="${icon}"></i> ${text}`;
-      return span;
-    }
-
-    // ====== LINHA ======
-    function rowFor(item){
-      const row = document.createElement('div');
-      row.className = 'row__item';
-
-      const name = document.createElement('div');
-      name.className = 'row__name';
-      name.innerHTML = `${item.type==='Driver' ? '<i class=\'bx bxs-chip\'></i>' : (item.type==='Firmware' ? '<i class=\'bx bxs-microchip\'></i>' : '<i class=\'uil uil-apps\'></i>')} <strong>${item.name}</strong>`;
-
-      const vendor = document.createElement('div');
-      vendor.textContent = item.vendor;
-      vendor.className = 'col-hide-sm';
-
-      const badges = document.createElement('div');
-      badges.className = 'row__badges';
-      item.os.forEach(o=> badges.appendChild(badge('bi bi-microsoft', o)));
-      item.arch.forEach(a=> badges.appendChild(badge('bi bi-cpu', a)));
-
-      const version = document.createElement('div');
-      version.textContent = item.version || '—';
-      version.className = 'col-hide-lg';
-
-      const size = document.createElement('div');
-      size.textContent = item.size || '—';
-      size.className = 'col-hide-lg';
-
-      const right = document.createElement('div');
-      right.innerHTML = `
-        <div style="display:flex; gap:.6rem; align-items:center; justify-content:flex-end">
-          <span style="opacity:.8; font-size:.85rem" class="col-hide-sm">Atualizado: ${fmtDate(item.date)}</span>
-          <a class="button button--flex button--small" href="${item.path}" download>
-            Baixar <i class="bi bi-download button__icon" aria-hidden="true"></i>
-          </a>
-        </div>`;
-
-      row.appendChild(name);
-      row.appendChild(vendor);
-      row.appendChild(badges);
-      row.appendChild(version);
-      row.appendChild(size);
-      row.appendChild(right);
-
-      return row;
-    }
-
-    // ====== RENDER ======
-    let STATE = { brand: 'All', q: '', tab: 'All' };
-
-    function applyFilters(){
-      let list = CATALOG.slice();
-      if(STATE.brand !== 'All') list = list.filter(i=> i.vendor === STATE.brand);
-      if(STATE.tab !== 'All') list = list.filter(i=> i.type === STATE.tab);
-      if(STATE.q){
-        const q = STATE.q.toLowerCase();
-        list = list.filter(i=> [i.name, i.vendor, i.version, i.type].filter(Boolean).join(' ').toLowerCase().includes(q));
-      }
-
-      const cont = $('#rowsContainer');
-      cont.innerHTML = '';
-      if(!list.length){ $('#emptyState').style.display='block'; return; }
-      $('#emptyState').style.display='none';
-      list.forEach(i=> cont.appendChild(rowFor(i)));
-    }
-
-    function buildBrandChips(){
-      const brands = ['All', ...uniq(CATALOG.map(i=> i.vendor)).sort()];
-      const wrap = $('#brandChips');
-      wrap.innerHTML = '';
-      brands.forEach(b=>{
-        const el = document.createElement('button');
-        el.className = 'chip' + (b===STATE.brand ? ' active' : '');
-        el.textContent = b;
-        el.addEventListener('click', ()=>{
-          STATE.brand = b; updateActiveChips(); applyFilters();
-        });
-        wrap.appendChild(el);
+      // Menu do celular
+      if (toggle) toggle.addEventListener('click', function () { menu.classList.add('show-menu'); });
+      if (close) close.addEventListener('click', function () { menu.classList.remove('show-menu'); });
+      document.querySelectorAll('.nav__link').forEach(function (a) {
+        a.addEventListener('click', function () { menu.classList.remove('show-menu'); });
       });
-    }
 
-    function updateActiveChips(){
-      $$('#brandChips .chip').forEach(btn=>{
-        btn.classList.toggle('active', btn.textContent === STATE.brand);
+      // Tema claro / escuro (usa as mesmas chaves da página inicial)
+      try {
+        if (localStorage.getItem('selected-theme')) {
+          document.body.classList[localStorage.getItem('selected-theme') === 'dark' ? 'add' : 'remove'](darkTheme);
+          themeButton.classList[localStorage.getItem('selected-icon') === 'uil-moon' ? 'add' : 'remove'](iconTheme);
+        }
+      } catch (e) { }
+
+      themeButton.addEventListener('click', function () {
+        document.body.classList.toggle(darkTheme);
+        themeButton.classList.toggle(iconTheme);
+        try {
+          localStorage.setItem('selected-theme', document.body.classList.contains(darkTheme) ? 'dark' : 'light');
+          localStorage.setItem('selected-icon', themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun');
+        } catch (e) { }
       });
-    }
 
-    function bindTabs(){
-      $$('#type-tabs [data-tab]').forEach(btn=>{
-        btn.addEventListener('click', ()=>{
-          STATE.tab = btn.dataset.tab; 
-          $$('#type-tabs [data-tab]').forEach(b=> b.classList.remove('button--white'));
-          btn.classList.add('button--white');
-          applyFilters();
-        });
-      });
-      // Marcar "Todos" inicialmente
-      const first = $('#type-tabs [data-tab="All"]');
-      first && first.classList.add('button--white');
-    }
-
-    function bindSearch(){
-      $('#qInput').addEventListener('input', (e)=>{ STATE.q = e.target.value; applyFilters(); });
-      $('#clearBtn').addEventListener('click', ()=>{ $('#qInput').value=''; STATE.q=''; applyFilters(); });
-    }
-
-    function init(){
-      buildBrandChips();
-      bindTabs();
-      bindSearch();
-      applyFilters();
-    }
-
-    document.addEventListener('DOMContentLoaded', init);
+      // Sombra do cabeçalho e botão de voltar ao topo
+      window.addEventListener('scroll', function () {
+        header.classList[window.scrollY >= 80 ? 'add' : 'remove']('scroll-header');
+        up.classList[window.scrollY >= 560 ? 'add' : 'remove']('show-scroll');
+      }, { passive: true });
+    })();
   </script>
 </body>
+
 </html>
