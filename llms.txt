@@ -1,18 +1,14 @@
 # Easy Digital
 
-Site oficial da Easy Digital.
+> Empresa de Belo Horizonte (MG) especializada em soluções tecnológicas para gestão de impressão e automação de processos empresariais: outsourcing de multifuncionais, impressoras, scanners, impressoras térmicas, leitores de código de barras e laptops, com suporte técnico.
 
-Home:
-https://easydigital.com.br/
+## Páginas
+- [Home](https://easydigital.com.br/): apresentação da empresa
+- [Serviços](https://easydigital.com.br/#service): outsourcing de equipamentos
+- [Soluções](https://easydigital.com.br/#skills): impressão e cópia (PaperCut / NDD), scanner e térmicas
+- [Downloads](https://easydigital.com.br/download.html): drivers e softwares de suporte
 
-Downloads:
-https://easydigital.com.br/download.html
-
-Serviços:
-- Infraestrutura de TI
-- Redes
-- Segurança
-- Consultoria
-
-Contato:
-contato@easydigital.com.br
+## Contato
+- E-mail: comercial@easydigital.com.br
+- WhatsApp: +55 31 97124-8902
+- Endereço: Av. Olinto Magalhães, 1869 - Dom Bosco, Belo Horizonte - MG

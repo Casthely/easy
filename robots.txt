@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /assets/files/
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 Sitemap: https://easydigital.com.br/sitemap.xml
-
-Content-Signal: search=yes, ai-train=no
