@@ -224,7 +224,7 @@ img {
         left: 0;
         width: 100%;
         background-color: var(--body-color);
-        padding: 2rem, 1.5rem, 4rem;
+        padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
@@ -1089,6 +1089,7 @@ img {
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+    justify-content: center;
 
     &:hover {
         color: var(--first-color-lighter);
@@ -1105,9 +1106,9 @@ img {
 }
 
 .footer__copy {
-    font-size: var(--smaller-font-size);
+    font-size: 12px;;
     text-align: center;
-    color: var(--text-color-light);
+    color: white;
     margin-top: var(--mb-3)
 }
 
@@ -1426,14 +1427,17 @@ img {
         .footer__links {
             flex-direction: row;
             column-gap: 2rem;
+            justify-content: center;
         }
 
         .footer__socials {
             justify-self: flex-end;
+            justify-content: center;
         }
 
         .footer__copy {
             margin-top: 4.5rem;
+            font-size: 12px;
         }
 
     }
