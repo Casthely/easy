@@ -1,0 +1,18 @@
+# Easy Digital
+
+Site oficial da Easy Digital.
+
+Home:
+https://easydigital.com.br/
+
+Downloads:
+https://easydigital.com.br/download.html
+
+Serviços:
+- Infraestrutura de TI
+- Redes
+- Segurança
+- Consultoria
+
+Contato:
+contato@easydigital.com.br
